@@ -1,0 +1,667 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+body {
+  margin: 0;
+  font-family: "Raleway", "Cambria", "Amatic SC", "Eczar", "Itim", serif,
+    cursive, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 20px;
+  background-color: white;
+}
+/* background-color: #3a5b78; */
+
+.navbar:hover {
+  opacity: 0.7;
+}
+
+.homelinks {
+  color: black;
+  text-decoration: none;
+}
+
+.background-color {
+  background-color: #3a5b78;
+}
+
+.intro {
+  padding: 180px;
+  justify-content: center;
+}
+
+.name {
+  text-align: center;
+  font-size: 40px;
+}
+
+.myTitle {
+  display: flex;
+  font-size: 28px;
+  justify-content: center;
+}
+
+.secondCategory {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  align-items: center;
+}
+
+.aboutMe {
+  font-size: 20px;
+  width: 60%;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.myname {
+  color: #ff8360;
+  font-family: "Itim", cursive;
+  font-size: 24px;
+}
+
+.gracehopper {
+  color: #ff8360;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+}
+
+.github-icon {
+  height: 50px;
+  width: auto;
+  padding-right: 30px;
+  padding-top: 10px;
+  /* opacity: 0.5; */
+}
+
+/* .github-icon:hover {
+  opacity: 1;
+} */
+
+.section1 {
+  background-color: #bad6db;
+  color: white;
+  height: 800px;
+  width: 100vw;
+}
+
+@media (max-width: 736px) {
+  .section1 {
+    height: 400px;
+  }
+
+  .name {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .intro {
+    padding: 100px 0px 50px 0px;
+  }
+
+  .myTitle {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.section2 {
+  background-color: #edf4f4;
+  height: 800px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.aboutMe-info {
+  display: flex;
+}
+
+.whoamI {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  padding: 0px 40px 40px 40px;
+  /* color: white; */
+}
+
+.whoamI2 {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  padding: 0px 40px 40px 40px;
+  color: white;
+}
+
+.secondCategory2 {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  justify-content: center;
+  font-size: 28px;
+  width: 40%;
+}
+
+@media (max-width: 736px) {
+  .section2 {
+    background-color: #e6eceb;
+    height: 1100px;
+    width: 100vw;
+  }
+
+  .secondCategory2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .aboutMe-info {
+    flex-direction: column;
+  }
+
+  .aboutMe {
+    font-size: 18px;
+    width: 80%;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+}
+
+.section3 {
+  background-color: #abd2f2;
+  height: 1000px;
+  width: 100vw;
+}
+
+.secondCategory3 {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-evenly;
+}
+
+.universal-logo-container {
+  display: flex;
+  width: 80px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+}
+
+.skill-title {
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.skill-image {
+  height: 60px;
+  width: auto;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.skill-image2 {
+  height: 85px;
+  width: auto;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.skill-image3 {
+  height: 65px;
+  width: auto;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+.skill-image4 {
+  height: 70px;
+  width: auto;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+.skill-image5 {
+  height: 65px;
+  width: auto;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.skill-image6 {
+  height: 55px;
+  width: auto;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.skilldescription {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.skillTitle {
+  font-size: 20px;
+  color: white;
+}
+
+.blocks {
+  height: 40px;
+  width: 200px;
+  background-color: #f3b391;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lists {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.frameworks,
+.languages,
+.tools,
+.testing {
+  width: 25%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 736px) {
+  .section3 {
+    background-color: #8dc6d9;
+    height: 2200px;
+    width: 100vw;
+  }
+
+  .skilldescription {
+    padding: 30px;
+    width: 80%;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .frameworks,
+  .languages,
+  .tools,
+  .testing {
+    width: 85%;
+    padding: 0px 40px 20px 40px;
+  }
+}
+
+.section4 {
+  background-color: #b4c8f8;
+  height: 1000px;
+  width: 100vw;
+}
+
+.secondCategory4 {
+  padding: 50px;
+  text-align: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.project1 {
+  display: flex;
+}
+
+.project2 {
+  display: flex;
+  padding-top: 70px;
+}
+
+.project-name,
+.project-name2 {
+  font-size: 24px;
+  color: white;
+}
+
+.picture {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.picture-tag {
+  width: 510px;
+  opacity: 0.8;
+}
+
+.picture-tag2 {
+  width: 450px;
+  opacity: 0.8;
+}
+
+.picture-tag:hover {
+  opacity: 1;
+}
+
+.picture-tag2:hover {
+  opacity: 1;
+}
+
+.project-paragraph {
+  color: white;
+  padding-right: 50px;
+}
+
+.picture-description {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.picture-description2 {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.button {
+  display: flex;
+  padding-top: 20px;
+}
+
+.buttonText {
+  width: 130px;
+  height: 50px;
+  background-color: white;
+  margin-right: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.heroku,
+.github {
+  text-decoration: none;
+  color: black;
+}
+
+/* section 4 */
+@media (max-width: 736px) {
+  .section4 {
+    height: 2400px;
+    width: 100vw;
+  }
+
+  .project1 {
+    flex-direction: column;
+  }
+
+  .picture {
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .project2 {
+    flex-direction: column;
+  }
+
+  .picture-tag2 {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.section5 {
+  background-color: #edf4f4;
+  height: 800px;
+  width: 100vw;
+}
+
+.secondCategory5 {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  align-items: center;
+  padding: 30px;
+}
+
+.whoamI5 {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  padding-top: 20px;
+}
+
+.research-poster {
+  display: flex;
+  justify-content: center;
+}
+
+.research-poster-description {
+  padding-top: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.research-title {
+  color: black;
+  font-size: 28px;
+}
+
+.Bfccc {
+  height: 450px;
+}
+
+.date-poster {
+  font-size: 12px;
+}
+
+.moreInformation {
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 2px solid white;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #abd2f2;
+  color: black;
+  width: 700px;
+  max-width: 80%;
+}
+
+.pitt-logo {
+  height: 100px;
+  width: auto;
+  padding: 10px;
+}
+
+.modal-description {
+  display: flex;
+}
+
+.poster-summary {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.open-button {
+  border: 2px solid white;
+  border-radius: 12px;
+  background-color: #abd2f2;
+  font-family: Raleway;
+  color: white;
+  height: 45px;
+  width: 140px;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #bad6db;
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 0.7;
+  pointer-events: all;
+}
+
+/* section 5 */
+@media (max-width: 736px) {
+  .section5 {
+    height: 700px;
+  }
+
+  .Bfccc {
+    max-width: 90%;
+    height: auto;
+  }
+  .research-title {
+    max-width: 95%;
+    font-size: 22px;
+  }
+}
+
+.section6 {
+  background-color: #bad6db;
+  height: 400px;
+  width: 100vw;
+}
+
+.secondCategory6 {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  align-items: center;
+  padding: 50px;
+}
+
+.letschat {
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  color: white;
+}
+
+.whoamI6 {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  color: white;
+}
+
+.icons6 {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.github-icon6 {
+  height: 30px;
+  width: auto;
+  padding: 10px 20px 0px 20px;
+  opacity: 0.5;
+}
+
+.github-icon6:hover {
+  opacity: 1;
+}
+
+/* section 6  */
+@media (max-width: 736px) {
+  .letschat {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+/* .footer {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background-color: #b9cfd4;
+}
+
+.footerName {
+  justify-content: center;
+  text-align: center;
+  color: white;
+} */
