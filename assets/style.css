@@ -18,6 +18,7 @@ html {
 .navbar {
   overflow: hidden;
   position: fixed;
+  z-index: 9999;
   padding: 25px;
   display: flex;
   justify-content: space-evenly;
@@ -28,7 +29,7 @@ html {
 /* background-color: #3a5b78; */
 
 .navbar:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .homelinks {
@@ -41,7 +42,7 @@ html {
 }
 
 .intro {
-  padding: 180px;
+  padding: 300px 0px 50px 0px;
   justify-content: center;
 }
 
@@ -88,40 +89,110 @@ html {
 .github-icon {
   height: 50px;
   width: auto;
-  padding-right: 30px;
-  padding-top: 10px;
-  /* opacity: 0.5; */
+  margin-right: 30px;
+  margin-top: 10px;
 }
 
-/* .github-icon:hover {
-  opacity: 1;
-} */
+.github-icon:hover {
+  background: #ff8360;
+}
+
+/* #A0E4D3 - brighter green */
+/* #bad6db   -original mint green */
 
 .section1 {
-  background-color: #bad6db;
+  background-color: #7cafc4;
   color: white;
   height: 800px;
   width: 100vw;
 }
 
+.ml12 {
+  font-size: 45px;
+  text-emphasis: center;
+  text-align: center;
+  /* font-weight: 200; */
+  /* font-size: 1.8em; */
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml5 {
+  position: relative;
+  /* font-weight: 300;
+  font-size: 4.5em; */
+  color: white;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  /* background-color: white; */
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  /* font-family: Baskerville, serif;
+  font-style: italic; */
+  /* font-weight: 400; */
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
 @media (max-width: 736px) {
   .section1 {
-    height: 400px;
+    height: 500px;
   }
 
-  .name {
+  /* .name {
     text-align: center;
-    font-size: 40px;
-  }
+    font-size: 45px;
+  } */
 
   .intro {
-    padding: 100px 0px 50px 0px;
+    /* padding: 100px 0px 50px 0px; */
+    padding: 220px 60px 0px 60px;
   }
 
   .myTitle {
+    display: block;
     font-size: 20px;
     padding: 20px;
     text-align: center;
+  }
+
+  .titleBreak {
+    display: none;
+  }
+
+  .title-fs,
+  .title-rn {
+    display: block;
   }
 }
 
@@ -141,7 +212,6 @@ html {
   font-family: "Amatic SC", cursive;
   font-size: 50px;
   padding: 0px 40px 40px 40px;
-  /* color: white; */
 }
 
 .whoamI2 {
@@ -196,7 +266,7 @@ html {
 }
 
 .secondCategory3 {
-  padding-top: 25px;
+  padding-top: 80px;
   display: flex;
   justify-content: center;
   font-size: 28px;
@@ -274,7 +344,7 @@ html {
 
 .skillTitle {
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 .blocks {
@@ -309,7 +379,7 @@ html {
 @media (max-width: 736px) {
   .section3 {
     background-color: #8dc6d9;
-    height: 2200px;
+    height: 2300px;
     width: 100vw;
   }
 
@@ -332,36 +402,25 @@ html {
 }
 
 .section4 {
-  background-color: #b4c8f8;
-  height: 1000px;
+  background-color: #3b6d91;
+  height: 1200px;
   width: 100vw;
 }
 
 .secondCategory4 {
-  padding: 50px;
+  padding-top: 70px;
   text-align: center;
   justify-content: center;
   font-size: 28px;
 }
 
 .project1 {
-  display: flex;
-}
-
-.project2 {
-  display: flex;
-  padding-top: 70px;
-}
-
-.project-name,
-.project-name2 {
-  font-size: 24px;
-  color: white;
 }
 
 .picture {
-  width: 50%;
-  padding-left: 100px;
+  /* width: 50%; */
+  display: flex;
+  justify-content: center;
 }
 
 .picture-tag {
@@ -369,17 +428,10 @@ html {
   opacity: 0.8;
 }
 
-.picture-tag2 {
-  width: 450px;
-  opacity: 0.8;
-}
-
-.picture-tag:hover {
-  opacity: 1;
-}
-
+.picture-tag:hover,
 .picture-tag2:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .project-paragraph {
@@ -399,20 +451,23 @@ html {
 
 .button {
   display: flex;
-  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
 }
 
 .buttonText {
   width: 130px;
   height: 50px;
-  background-color: white;
+  background-color: #abd2f2;
   margin-right: 20px;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
 }
 
 .heroku,
@@ -424,7 +479,7 @@ html {
 /* section 4 */
 @media (max-width: 736px) {
   .section4 {
-    height: 2400px;
+    height: 1100px;
     width: 100vw;
   }
 
@@ -449,7 +504,7 @@ html {
 }
 
 .section5 {
-  background-color: #edf4f4;
+  background-color: #eef5fc;
   height: 800px;
   width: 100vw;
 }
@@ -459,13 +514,13 @@ html {
   justify-content: center;
   font-size: 28px;
   align-items: center;
-  padding: 30px;
+  padding: 70px 0px 20px 0px;
 }
 
 .whoamI5 {
   font-family: "Amatic SC", cursive;
   font-size: 50px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .research-poster {
@@ -493,8 +548,8 @@ html {
 }
 
 .moreInformation {
-  justify-content: center;
   padding-top: 30px;
+  cursor: pointer;
 }
 
 .modal {
@@ -502,10 +557,10 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  border: 2px solid white;
+  border: 2px solid #abd2f2;
   border-radius: 10px;
   z-index: 10;
-  background-color: #abd2f2;
+  background-color: white;
   color: black;
   width: 700px;
   max-width: 80%;
@@ -519,6 +574,12 @@ html {
 
 .modal-description {
   display: flex;
+}
+
+.pandemic-image {
+  width: 370px;
+  height: auto;
+  padding: 0px 20px 20px 10px;
 }
 
 .poster-summary {
@@ -537,7 +598,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #abd2f2;
 }
 
 .modal-header .title {
@@ -557,15 +618,30 @@ html {
 .open-button {
   border: 2px solid white;
   border-radius: 12px;
-  background-color: #abd2f2;
+  background-color: #ff8360;
   font-family: Raleway;
   color: white;
   height: 45px;
   width: 140px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.open-button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
 .modal-body {
-  padding: 10px 15px;
+  padding: 30px 25px;
+}
+
+.modal-body-project1 {
+  display: flex;
+  padding: 20px;
 }
 
 #overlay {
@@ -652,16 +728,3 @@ html {
     text-align: center;
   }
 }
-
-/* .footer {
-  display: flex;
-  height: 40px;
-  width: 100%;
-  background-color: #b9cfd4;
-}
-
-.footerName {
-  justify-content: center;
-  text-align: center;
-  color: white;
-} */
