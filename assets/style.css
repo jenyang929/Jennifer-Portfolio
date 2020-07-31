@@ -35,10 +35,11 @@ html {
 .homelinks {
   color: black;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .background-color {
-  background-color: #3a5b78;
+  background-color: #eef5fc;
 }
 
 .intro {
@@ -84,17 +85,21 @@ html {
 
 .icons {
   display: flex;
+  justify-content: center;
+  margin: 40px;
 }
 
 .github-icon {
-  height: 50px;
+  height: 40px;
   width: auto;
   margin-right: 30px;
   margin-top: 10px;
+  opacity: 0.7;
 }
 
 .github-icon:hover {
-  background: #ff8360;
+  /* background: #ff8360; */
+  opacity: 1;
 }
 
 /* #A0E4D3 - brighter green */
@@ -103,7 +108,7 @@ html {
 .section1 {
   background-color: #7cafc4;
   color: white;
-  height: 800px;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -111,8 +116,6 @@ html {
   font-size: 45px;
   text-emphasis: center;
   text-align: center;
-  /* font-weight: 200; */
-  /* font-size: 1.8em; */
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
@@ -169,11 +172,6 @@ html {
     height: 500px;
   }
 
-  /* .name {
-    text-align: center;
-    font-size: 45px;
-  } */
-
   .intro {
     /* padding: 100px 0px 50px 0px; */
     padding: 220px 60px 0px 60px;
@@ -194,11 +192,32 @@ html {
   .title-rn {
     display: block;
   }
+
+  .navbar {
+    padding: 25px 0px 25px 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section1 {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .ml12 {
+    font-size: 18px;
+  }
+
+  .homelinks {
+    font-size: 10px;
+  }
 }
 
 .section2 {
-  background-color: #edf4f4;
-  height: 800px;
+  /* background-color: #edf4f4; */
+  background-color: #eef5fc;
+  /* background: linear-gradient(#7cafc4, #edf4f4); */
+  /* height: 800px; */
   width: 100vw;
   display: flex;
   align-items: center;
@@ -206,6 +225,11 @@ html {
 
 .aboutMe-info {
   display: flex;
+}
+
+.resume {
+  text-decoration: none;
+  color: white;
 }
 
 .whoamI {
@@ -232,7 +256,7 @@ html {
 @media (max-width: 736px) {
   .section2 {
     background-color: #e6eceb;
-    height: 1100px;
+    /* height: 1100px; */
     width: 100vw;
   }
 
@@ -260,81 +284,18 @@ html {
 }
 
 .section3 {
-  background-color: #abd2f2;
-  height: 1000px;
+  /* background-color: #abd2f2; */
+  background-color: #ecd5db;
+  /* background: linear-gradient(#edf4f4, #abd2f2); */
+  /* height: 1100px; */
   width: 100vw;
 }
 
 .secondCategory3 {
-  padding-top: 80px;
   display: flex;
   justify-content: center;
   font-size: 28px;
   align-items: center;
-}
-
-.skills {
-  display: flex;
-  padding-top: 30px;
-  justify-content: space-evenly;
-}
-
-.universal-logo-container {
-  display: flex;
-  width: 80px;
-}
-
-.skill {
-  display: flex;
-  align-items: center;
-}
-
-.skill-title {
-  color: white;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.skill-image {
-  height: 60px;
-  width: auto;
-  padding-right: 10px;
-  padding-top: 20px;
-}
-
-.skill-image2 {
-  height: 85px;
-  width: auto;
-  padding-right: 10px;
-  padding-top: 20px;
-}
-
-.skill-image3 {
-  height: 65px;
-  width: auto;
-  padding-right: 15px;
-  padding-top: 20px;
-}
-
-.skill-image4 {
-  height: 70px;
-  width: auto;
-  padding-right: 15px;
-  padding-top: 20px;
-}
-
-.skill-image5 {
-  height: 65px;
-  width: auto;
-  padding-right: 10px;
-  padding-top: 20px;
-}
-
-.skill-image6 {
-  height: 55px;
-  width: auto;
-  padding-right: 10px;
-  padding-top: 20px;
 }
 
 .skilldescription {
@@ -345,6 +306,38 @@ html {
 .skillTitle {
   font-size: 20px;
   color: black;
+}
+
+.tools-icons {
+  margin: 50px 200px 50px 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 736px) {
+  .tools-icons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    flex-wrap: wrap;
+  }
+}
+
+.skill-logo {
+  height: 80px;
+  width: auto;
+}
+
+.skill-title {
+  text-align: center;
+}
+
+.tools-icons > div > div {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blocks {
@@ -378,8 +371,7 @@ html {
 
 @media (max-width: 736px) {
   .section3 {
-    background-color: #8dc6d9;
-    height: 2300px;
+    /* height: 280vh; */
     width: 100vw;
   }
 
@@ -387,34 +379,47 @@ html {
     padding: 30px;
     width: 80%;
   }
-
-  .skills {
-    flex-direction: column;
-  }
-
-  .frameworks,
-  .languages,
-  .tools,
-  .testing {
-    width: 85%;
-    padding: 0px 40px 20px 40px;
-  }
 }
 
 .section4 {
-  background-color: #3b6d91;
-  height: 1200px;
+  /* background-color: #3b6d91; */
+  /* background: linear-gradient(#eef5fc, #abd2f2); */
+  background: #b4c1f8;
+  /* height: 1800px; */
   width: 100vw;
 }
 
+.project-container {
+}
+
+.foodle {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 50px 50px 140px;
+  /* margin: auto; */
+}
+
+.foodle-container {
+  margin: auto;
+}
+
+.foodle-description {
+  margin: 50px;
+  color: white;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+
+.foodle-picture {
+  height: 410px;
+  width: auto;
+}
+
 .secondCategory4 {
-  padding-top: 70px;
+  /* padding-top: 70px; */
   text-align: center;
   justify-content: center;
   font-size: 28px;
-}
-
-.project1 {
 }
 
 .picture {
@@ -479,7 +484,6 @@ html {
 /* section 4 */
 @media (max-width: 736px) {
   .section4 {
-    height: 1100px;
     width: 100vw;
   }
 
@@ -501,11 +505,23 @@ html {
     max-width: 100%;
     height: auto;
   }
+
+  .foodle {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .foodle-picture {
+    height: 200px;
+    width: auto;
+  }
 }
 
 .section5 {
   background-color: #eef5fc;
-  height: 800px;
+  /* background: linear-gradient(#abd2f2, #eef5fc); */
+  /* background: linear-gradient(#3b6d91, #eef5fc); */
+  /* height: 1300px; */
   width: 100vw;
 }
 
@@ -514,7 +530,7 @@ html {
   justify-content: center;
   font-size: 28px;
   align-items: center;
-  padding: 70px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
 }
 
 .whoamI5 {
@@ -642,6 +658,7 @@ html {
 .modal-body-project1 {
   display: flex;
   padding: 20px;
+  font-size: 16px;
 }
 
 #overlay {
@@ -663,10 +680,6 @@ html {
 
 /* section 5 */
 @media (max-width: 736px) {
-  .section5 {
-    height: 700px;
-  }
-
   .Bfccc {
     max-width: 90%;
     height: auto;
@@ -678,8 +691,9 @@ html {
 }
 
 .section6 {
-  background-color: #bad6db;
-  height: 400px;
+  /* background-color: #bad6db; */
+  background-color: #7cafc4;
+  /* height: 400px; */
   width: 100vw;
 }
 
@@ -726,5 +740,26 @@ html {
   .letschat {
     padding: 20px;
     text-align: center;
+  }
+}
+
+/* .section1, */
+.section2,
+.section3,
+.section4,
+.section5,
+.section6 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 736px) {
+  .section2,
+  .section3,
+  .section4,
+  .section5,
+  .section6 {
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 }
