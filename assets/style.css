@@ -389,9 +389,6 @@ html {
   width: 100vw;
 }
 
-.project-container {
-}
-
 .foodle {
   display: flex;
   justify-content: space-around;
@@ -743,7 +740,18 @@ html {
   }
 }
 
-/* .section1, */
+.footer {
+  background-color: #7cafc4;
+  opacity: 0.5;
+  color: black;
+}
+
+.footerName {
+  justify-content: center;
+  display: flex;
+  padding: 30px;
+}
+
 .section2,
 .section3,
 .section4,
