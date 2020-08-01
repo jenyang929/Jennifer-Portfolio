@@ -169,7 +169,7 @@ html {
 
 @media (max-width: 736px) {
   .section1 {
-    height: 500px;
+    /* height: 500px; */
   }
 
   .intro {
@@ -205,7 +205,7 @@ html {
   }
 
   .ml12 {
-    font-size: 18px;
+    font-size: 34px;
   }
 
   .homelinks {
@@ -391,26 +391,50 @@ html {
 
 .foodle {
   display: flex;
-  justify-content: space-around;
-  margin: 0px 50px 50px 140px;
+  /* justify-content: space-around; */
+  /* margin: 0px 50px 50px 140px; */
   /* margin: auto; */
 }
 
 .foodle-container {
   margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.project-image-container {
+  height: 500px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 736px) {
+  .project-image-container {
+    height: 300px;
+    width: 400px;
+  }
 }
 
 .foodle-description {
   margin: 50px;
   color: white;
   font-size: 20px;
+  width: 100%;
   /* font-weight: bold; */
 }
 
-.foodle-picture {
-  height: 410px;
-  width: auto;
+.foodle-picture,
+.narwhal {
+  /* height: 350px;
+  width: 500px; */
 }
+
+/* .narwhal {
+  height: 390px;
+  width: auto;
+} */
 
 .secondCategory4 {
   /* padding-top: 70px; */
@@ -510,7 +534,10 @@ html {
 
   .foodle-picture {
     height: 200px;
-    width: auto;
+    width: 300px;
+  }
+  .foodle-description {
+    margin: 0;
   }
 }
 
@@ -744,6 +771,7 @@ html {
   background-color: #7cafc4;
   opacity: 0.5;
   color: black;
+  width: 100vw;
 }
 
 .footerName {

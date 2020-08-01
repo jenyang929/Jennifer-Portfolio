@@ -1,65 +1,528 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <!-- <link rel="icon" src="assets/favicon.png"> -->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <title>Jennifer Yang | Developer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script src="main.js" async></script>
+      <link rel="stylesheet" href="assets/style.css" />
+      <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet' type='text/css'>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.17.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.17.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.17.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.17.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.17.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
   </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+  <body class="background-color">
+    <div class="containerOfSections">
+      <div class="navbar">
+        <h5 class="homelink"><a href="#section1" class="homelinks">Home</a></h5>
+        <h5 class="homelink"><a href="#section2" class="homelinks">About Me</a></h5>
+        <h5 class="homelink"><a href="#section3"  class="homelinks">Skills</a></h5>
+        <h5 class="homelink"><a href="#section4"  class="homelinks">Projects</a></h5>
+        <h5 class="homelink"><a href="#section5"  class="homelinks">Research</a></h5>
+        <h5 class="homelink"><a href="#section6"  class="homelinks">Contact</a></h5>
+      </div>
+
+      <div class="section1" id="section1">
+        <div class="firstCategory">
+          <div class="intro">
+            <h1 class="ml12">J E N N I F E R</h1>
+          </div>
+          <div class="myTitle">
+
+            <h4 class="ml5">
+              <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters letters-left title-fs">FULL STACK DEVELOPER</span>
+                <span class="letters ampersand titleBreak">&nbsp;|&nbsp;</span>
+                <span class="letters letters-right title-rn">REGISTERED NURSE</span>
+                <span class="line line2"></span>
+              </span>
+            </h4>
+
+
+
+            <!-- <span class="title-fs">FULL STACK DEVELOPER</span>
+              <span class="titleBreak">&nbsp;|&nbsp;</span>
+              <span class="title-rn">REGISTERED NURSE</span> -->
+
+            </div>
+
+            <div class="icons">
+              <a href="https://github.com/jenyang929" target="_blank">
+              <img class="github-icon" src="assets/github.png"></a>
+
+              <a href="https://www.linkedin.com/in/yang-jennifer/" target="_blank">
+                <img class="github-icon" src="assets/linkedin.png"></a>
+
+                <a href="mailto:jenyang929@gmail.com">
+                  <img class="github-icon" src="assets/email.png">
+                </a>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="section2" id="section2">
+        <div class="aboutMe-info">
+          <div class="secondCategory2">
+            <h3 class="whoamI">WHO AM I?</h3>
+            <img
+              class="headshot"
+              src="assets/headshot.png"
+              height="250px"
+              width="250px"
+            />
+          </div>
+          <div class="aboutMe">
+            <strong class="myname">Hello! I'm Jennifer Yang!</strong>
+
+              <p>  I am a full-stack software engineer with a healthcare background.</p>
+
+
+            <p>
+              Previously, I tackled problems in healthcare as a nurse. As I
+              personally witnessed my peers struggling with software, I wanted to find solutions for more efficient user experiences. My curiosity for programming and creativity pushed me to make
+              the leap into development where I attended the <a class="gracehopper" href="https://www.gracehopper.com/#:~:text=The%20Grace%20Hopper%20Program%20at,quality%20instruction%2C%20and%20individualized%20mentorship.">Grace Hopper Program</a> at
+              Fullstack Academy. Now, you can always find me drinking a cup of coffee or milk tea as I'm discovering new technologies.
+            </p>
+
+            <p>
+              When I am not coding, I am an avid fitness enthusiast and traveller. I enjoy yoga, kickboxing, and playing volleyball during my free time!
+            </p>
+
+            <div class="resume-button">
+              <button class="open-button"><a href="assets/resume.pdf" class="resume" target="_blank">
+                Resume
+              </a></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="section3" id="section3">
+        <div class="secondCategory3">
+          <h3 class="whoamI">Skills & Tools</h3>
+        </div>
+
+        <div class="skilldescription">
+          <h3 class="skillTitle">
+            Javascript is my primary language. Currently specialize in the PERN stack but is not limited to...
+          </h3>
+        </div>
+
+        <div class="tools-icons">
+            <div class="">
+                <div>
+                  <img class="skill-logo" src="assets/js.png">
+                </div>
+                <div>
+                  <div class="skill-title">Javascript</div>
+                </div>
+            </div>
+
+            <div class="">
+              <div>
+                <img class="skill-logo" src="assets/html.png">
+              </div>
+              <div>
+                <div class="skill-title">HTML</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/css.png">
+              </div>
+              <div>
+                <div class="skill-title">CSS</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/react.png">
+              </div>
+              <div>
+                <div class="skill-title">React</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/redux.png">
+              </div>
+              <div>
+                <div class="skill-title">Redux</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/nodejs.png">
+              </div>
+              <div>
+                <div class="skill-title">Node.js</div>
+              </div>
+            </div>
+        </div>
+
+        <div class="tools-icons">
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/postgres.png">
+              </div>
+              <div>
+                <div class="skill-title">PostgreSQL</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/Sequelize.png">
+              </div>
+              <div>
+                <div class="skill-title">Sequelize</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/git.png">
+              </div>
+              <div>
+                <div class="skill-title">Git</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/phaser.png">
+              </div>
+              <div>
+                <div class="skill-title">Phaser</div>
+              </div>
+            </div>
+
+             <div class="">
+              <div>
+              <img class="skill-logo" src="assets/bulma.png">
+              </div>
+              <div>
+                <div class="skill-title">Bulma</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/sass.png">
+              </div>
+              <div>
+                <div class="skill-title">Sass</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tools-icons">
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/webpack.png">
+              </div>
+              <div>
+                <div class="skill-title">Webpack</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/socket.png">
+              </div>
+              <div>
+                <div class="skill-title">Socket.io</div>
+              </div>
+            </div>
+
+
+          <div class="">
+            <div>
+            <img class="skill-logo" src="assets/jasmine.png">
+            </div>
+            <div>
+              <div class="skill-title">Jasmine</div>
+            </div>
+          </div>
+
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/responsive.png">
+              </div>
+              <div>
+                <div class="skill-title">Responsiveness</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/github.png">
+              </div>
+              <div>
+                <div class="skill-title">Github</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/d3.png">
+              </div>
+              <div>
+                <div class="skill-title">D3</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="tools-icons">
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/mocha.png">
+              </div>
+              <div>
+                <div class="skill-title">Mocha</div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+              <img class="skill-logo" src="assets/chai.png">
+              </div>
+              <div>
+                <div class="skill-title">Chai</div>
+              </div>
+            </div>
+
+        </div> -->
+      </div>
+
+      <div class="section4" id="section4">
+        <div class="secondCategory4">
+          <h3 class="whoamI2">Projects That I've Created</h3>
+        </div>
+
+      <div class="project-container">
+        <div class="foodle-container">
+          <div class="foodle">
+              <div class="project-image-container">
+                <img src="assets/foodlephone.png" class="foodle-picture">
+              </div>
+
+
+                <div class="foodle-description">
+                  <h2>Foodle</h2>
+                  <p>Mobile friendly, accessible web application where an organizer can create an event, invite friends, and friends can vote on a randomly generated restaurant suggestion poll to help with indecision. </p>
+
+                  <p>Piechart renders real-time updates when users vote on the restaurants of their choice on the event dashboard.</p>
+
+                  <p> Built using React, Redux, Sequelize, PostgreSQL, Express, Bulma, Sass, Socket.io, D3.js, and Google Places API</p>
+
+                  <div><a href="https://www.youtube.com/watch?v=vT_FW_NRI8g">
+                    <button class="open-button">Video Demo</button></a>
+
+                    <a href="https://github.com/Capstone-JMLY/Foodle" target="_blank">
+                      <button class="open-button">Github</button></a>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+
+          <div class="foodle-container">
+            <div class="foodle">
+              <div class="project-image-container">
+                <img src="assets/pandemicessentials.png" class="foodle-picture">
+              </div>
+
+
+              <div class="foodle-description">
+                <h2>Pandemic Essentials</h2>
+                <p>An e-commerce site where you can buy all your essentials during a pandemic</p>
+                <p>Built using React, Redux, Javascript, Node.js, Express, Sequelize, PostgreSQL, Passport, & Bootstrap</p>
+
+                <div class="moreInformation">
+                    <button data-modal-target="#modal-project1" class="open-button" >More Info</button>
+
+                <div class="modal" id="modal-project1">
+                  <div class="modal-header">
+                    <div class="title">Pandemic-Essentials</div>
+                    <button data-close-button class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body-project1">
+                    <div>
+                      <img class="pandemic-image" src="assets/pandemic-essential2.png">
+                    </div>
+                    <div class="modal-project1-description">
+
+                          <!-- <p>Tech: React, Redux, Javascript, Node.js, Express, Sequelize, PostgreSQL, Passport, & Bootstrap</p> -->
+
+                        <p>Individual contributions include back-end express routes, all products render, test-specs, administration functionalities, checkout, seeding faker data, and deployment</p>
+
+                        <p>Built in a week remotely while sketching database schemas, evaluating code reviews, and pair programming.</p>
+                      </div>
+                    </div>
+
+                    <div class="button">
+                      <div class="buttonText">
+                        <a class="heroku" href="https://pandemic-essentials.herokuapp.com/">Heroku</a>
+                      </div>
+
+                      <div class="buttonText">
+                        <a class="github" href="https://github.com/2004-GraceShopperProject-NY/GraceShopper">Github</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div id="overlay"></div>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="foodle-container">
+              <div class="foodle">
+                <div class="project-image-container">
+                  <img src="assets/narwhalcomputer.png" class="foodle-picture">
+                </div>
+
+
+
+                <div class="foodle-description">
+                    <h2>Narwhal-Gotchi</h2>
+                      <p>A Virtual Pet Narwhal game inspired by Tamagotchi!</p>
+                      <p>Includes a mini-game using Phaser, Javascript, Node.js, HTML5; deployed to firebase</p>
+
+
+                      <div class="moreInformation">
+                        <button data-modal-target="#modal-project2" class="open-button">More Info</button>
+
+                        <div class="modal" id="modal-project2">
+                          <div class="modal-header">
+                            <div class="title">Narwhal-Gotchi</div>
+                            <button data-close-button class="close-button">&times;</button>
+                          </div>
+                          <div class="modal-body-project1">
+                            <div>
+                              <img class="pandemic-image" src="assets/minigame.png">
+                            </div>
+                            <div class="modal-project1-description">
+
+                              <p>Created timed features, animations, and drag-and-drop items with collisions. Narwhals can collect coins from squid collisions in the mini-game</p>
+
+                              <p>Have your narwhal catch squids but make sure to dodge the killer whales!</p>
+
+                              <p>Built during a 4 day remote hackathon</p>
+                              </div>
+                            </div>
+
+                            <div class="button">
+                              <div class="buttonText">
+                                <a class="heroku" href="https://narwhal-gotchi.web.app/">Firebase</a>
+                              </div>
+
+                              <div class="buttonText">
+                                <a class="github" href="https://github.com/jenyang929/Narwhal-gotchi">Github</a>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div id="overlay"></div>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+      </div>
+
+      <div class="section5" id="section5">
+        <div class="secondCategory5">
+          <h3 class="whoamI5">Research Poster Project</h3>
+        </div>
+
+        <div class="research-poster">
+          <img class="Bfccc" src="assets/BF CCC.png">
+        </div>
+
+        <div class="research-poster-description">
+          <h3 class="research-title">Breast Feeding Support in Child Care Centers; a Review of the Literature </h3>
+          <i class="date-poster">September 2016 - March 2017</i>
+
+          <div class="moreInformation">
+              <button data-modal-target="#modal" class="open-button">More Information</button>
+
+              <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">Undergraduate Research Mentorship Program - School of Nursing</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-description">
+                  <img src="assets/pittsburgh.png" class="pitt-logo">
+
+                    <div class="poster-summary">
+                    Reviewed and summarized the existing literature related to barriers to breastfeeding encountered by mothers using Child Care Centers
+                    <p class="award">
+                      Awarded Best Poster for Undergraduate Students</p>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div id="overlay"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section6" id="section6">
+        <div class="secondCategory6">
+          <h3 class="whoamI6">Let's Talk!</h3>
+        </div>
+
+        <div class="letschat">
+          Want to chat? Have questions?
+          Feel free to email me @
+          jenyang929@gmail.com
+        </div>
+
+        <div class="icons6">
+          <a href="https://github.com/jenyang929" target="_blank">
+          <img class="github-icon6" src="assets/github.png"></a>
+
+          <a href="https://www.linkedin.com/in/yang-jennifer/" target="_blank">
+            <img class="github-icon6" src="assets/linkedin.png"></a>
+
+          <a href="mailto:jenyang929@gmail.com">
+            <img class="github-icon6" src="assets/email.png">
+          </a>
+        </div>
+
+
+      </div>
+
+      <div class="footer">
+        <h5 class="footerName">
+          Jennifer Yang | Copyright © 2020
+        </h5>
+      </div>
+
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
   </body>
 </html>
