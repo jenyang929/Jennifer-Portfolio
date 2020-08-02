@@ -502,6 +502,14 @@ html {
   color: black;
 }
 
+.foodle-buttons {
+  display: flex;
+}
+
+.foodle-button {
+  padding: 5px;
+}
+
 /* section 4 */
 @media (max-width: 736px) {
   .section4 {
@@ -536,9 +544,14 @@ html {
     height: 200px;
     width: 300px;
   }
+
   .foodle-description {
     margin: 0;
   }
+
+  /* .foodle-button {
+    justify-content: ;
+  } */
 
   .moreInformation {
     display: none;
