@@ -721,6 +721,9 @@ html {
 
 /* section 5 */
 @media (max-width: 736px) {
+  .whoamI5 {
+  }
+
   .Bfccc {
     max-width: 90%;
     height: auto;
